@@ -138,21 +138,9 @@
 			</svg>
 
 			<p>(</p>
-			<input
-				class="h-10 w-12 font text-center"
-				type="number"
-				id="x"
-				bind:value={coordinate.x}
-				min="1"
-			/>
+			<input class="h-10 w-12 font text-center" type="number" id="x" bind:value={coordinate.x} />
 			<p>,</p>
-			<input
-				class="h-10 w-12 font text-center"
-				type="number"
-				id="y"
-				bind:value={coordinate.y}
-				min="1"
-			/>
+			<input class="h-10 w-12 font text-center" type="number" id="y" bind:value={coordinate.y} />
 			<p>)</p>
 
 			<svg
@@ -171,9 +159,9 @@
 			</svg>
 
 			<p>(</p>
-			<input class="h-10 w-12 font text-center" type="number" id="x" bind:value={size.x} />
+			<input class="h-10 w-12 font text-center" type="number" id="x" min="1" bind:value={size.x} />
 			<p>,</p>
-			<input class="h-10 w-12 font text-center" type="number" id="y" bind:value={size.y} />
+			<input class="h-10 w-12 font text-center" type="number" id="y" min="1" bind:value={size.y} />
 			<p>)</p>
 
 			<button class="h-10 w-10 font text-center" on:click={() => shiftDataArray(0, -1)}
